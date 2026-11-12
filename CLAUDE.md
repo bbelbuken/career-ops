@@ -65,7 +65,15 @@ share one Claude account.
 - Kariyer.net, LinkedIn and Indeed are not scannable: for Turkish jobs the main
   flow is "paste URL / JD → evaluate".
 
-## 5. Calibration
+## 5. Help menu
+
+- When the user types **"yardım"**, **"menü"**, **"help"**, **"ne yapabilirim"**
+  (or runs `/yardim`), print `YARDIM.md` verbatim as the whole reply: no
+  summary, no additions, no other commands.
+- `YARDIM.md` is the one file written in Turkish (it is end-user text). When a
+  mode is added or a site's support changes, update it in the same commit.
+
+## 6. Calibration
 
 - Keep the 4.0/5 apply threshold at first. Once the candidate has recorded
   outcomes (`outcome` mode) for **10 applications**, suggest running `calibrate`
