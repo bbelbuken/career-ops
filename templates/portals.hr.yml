@@ -1,0 +1,222 @@
+# Portal template: HR / L&D family (fork-local)
+#
+# Used by: candidates whose archetypes in templates/archetypes.yml are `family: hr`.
+# During intake, copy this file to `portals.yml` (user layer, gitignored) and
+# refine location_filter with the candidate's target countries/cities.
+#
+# Turkish job sites (Kariyer.net, LinkedIn, Indeed) are NOT scannable — for those
+# the flow is "paste the URL / JD → evaluate". This file only covers boards the
+# scanner can read.
+#
+# Every tracked_companies entry below was resolved and confirmed live with
+# `node discover-ats.mjs` on 2026-11-12 (job counts shown in notes).
+# Re-check periodically with `node audit-portals.mjs`.
+
+title_filter:
+  positive:
+    # ld-training-facilitation
+    - "Learning & Development"
+    - "Learning and Development"
+    - "L&D"
+    - "Training"
+    - "Trainer"
+    - "Facilitator"
+    - "Learning Specialist"
+    - "Learning Partner"
+    - "Enablement"
+    # leadership-talent-assessment
+    - "Leadership Development"
+    - "Talent Development"
+    - "Talent Management"
+    - "Assessment"
+    - "Psychometric"
+    # org-development-consultant
+    - "Organizational Development"
+    - "Organisational Development"
+    - "Organizational Effectiveness"
+    - "Employee Experience"
+    - "Culture"
+    - "People Development"
+    # ld-vendor-client-roles
+    - "Learning Consultant"
+    - "Client Success"
+    - "Customer Success"
+    - "Client Partner"
+    # wellbeing-eap
+    - "Wellbeing"
+    - "Well-being"
+    - "Mental Health"
+    - "EAP"
+    # learning-experience-design (stretch)
+    - "Learning Experience"
+    - "Instructional Design"
+    - "Learning Designer"
+    # Turkish titles (for TR-language boards)
+    - "Eğitim"
+    - "Gelişim"
+    - "Yetenek"
+  negative:
+    - "Intern"
+    - "Internship"
+    - "Stajyer"
+    - "Working Student"
+    - "Werkstudent"
+    - "Director"
+    - "Vice President"
+    - "VP "
+    - "Head of"
+    - "Chief"
+    - "Engineer"
+    - "Developer"
+    # Abroad, clinical titles require local licensure (see archetype wellbeing-eap)
+    - "Clinical Psychologist"
+    - "Therapist"
+    - "Psychiatrist"
+
+# Draft allow-list: Turkey + EU hubs + remote. Narrow it during intake.
+location_filter:
+  always_allow:
+    - "Turkey"
+    - "Türkiye"
+    - "Turkiye"
+  allow:
+    - "Istanbul"
+    - "İstanbul"
+    - "Ankara"
+    - "Izmir"
+    - "İzmir"
+    - "Remote"
+    - "EMEA"
+    - "Europe"
+    - "Netherlands"
+    - "Amsterdam"
+    - "Germany"
+    - "Berlin"
+    - "Spain"
+    - "Barcelona"
+    - "Portugal"
+    - "Lisbon"
+    - "Ireland"
+    - "Dublin"
+    - "United Kingdom"
+    - "London"
+    - "Poland"
+    - "Warsaw"
+
+max_posting_age_days: 45
+
+tracked_companies:
+
+  # ── Multinationals with Istanbul hubs (Workday / SmartRecruiters) ──────────
+  - name: Philips
+    careers_url: https://philips.wd3.myworkdayjobs.com/jobs-and-careers
+    provider: workday
+    enabled: true
+    notes: "Multinational, Istanbul office. Verified 2026-11-12 (Workday, live)."
+
+  - name: Novartis
+    careers_url: https://novartis.wd3.myworkdayjobs.com/Novartis_Careers
+    provider: workday
+    enabled: true
+    notes: "Pharma, Istanbul hub. Verified 2026-11-12 (Workday, live)."
+
+  - name: Pfizer
+    careers_url: https://pfizer.wd1.myworkdayjobs.com/PfizerCareers
+    provider: workday
+    enabled: true
+    notes: "Pharma, Istanbul office. Verified 2026-11-12 (Workday, live)."
+
+  - name: Sanofi
+    careers_url: https://sanofi.wd3.myworkdayjobs.com/SanofiCareers
+    provider: workday
+    enabled: true
+    notes: "Pharma, Istanbul hub. Verified 2026-11-12 (Workday, live)."
+
+  - name: Mastercard
+    careers_url: https://mastercard.wd1.myworkdayjobs.com/CorporateCareers
+    provider: workday
+    enabled: true
+    notes: "Istanbul regional office. Verified 2026-11-12 (Workday, live)."
+
+  - name: Bosch
+    careers_url: https://careers.smartrecruiters.com/BoschGroup
+    provider: smartrecruiters
+    enabled: true
+    notes: "Large Turkey footprint (Istanbul, Bursa, Manisa). Verified 2026-11-12 (5000+ jobs)."
+
+  - name: Delivery Hero
+    careers_url: https://careers.smartrecruiters.com/DeliveryHero
+    provider: smartrecruiters
+    enabled: true
+    notes: "Owns Yemeksepeti (Istanbul); global eCommerce/logistics. Verified 2026-11-12 (881 jobs)."
+
+  - name: Trendyol
+    careers_url: https://jobs.lever.co/trendyol
+    provider: lever
+    enabled: true
+    notes: "Turkish eCommerce; has People/L&D roles. Verified 2026-11-12 (50 jobs)."
+
+  # ── L&D / learning vendors ────────────────────────────────────────────────
+  - name: 360Learning
+    careers_url: https://jobs.lever.co/360learning
+    provider: lever
+    enabled: true
+    notes: "Learning platform; client success / learning consultant roles. Verified 2026-11-12 (47 jobs)."
+
+  - name: Docebo
+    careers_url: https://jobs.ashbyhq.com/docebo
+    provider: ashby
+    enabled: true
+    notes: "LMS vendor; customer success / learning consultant roles. Verified 2026-11-12 (34 jobs)."
+
+  - name: Coursera
+    careers_url: https://job-boards.greenhouse.io/coursera
+    provider: greenhouse
+    enabled: true
+    notes: "Corporate learning (Coursera for Business). Verified 2026-11-12 (40 jobs)."
+
+  - name: Speexx
+    careers_url: https://apply.workable.com/speexx
+    provider: workable
+    enabled: true
+    notes: "Corporate language & communication training (Munich). Verified 2026-11-12 (9 jobs)."
+
+  - name: Culture Amp
+    careers_url: https://job-boards.greenhouse.io/cultureamp
+    provider: greenhouse
+    enabled: true
+    notes: "People/engagement platform; OD-adjacent consulting roles. Verified 2026-11-12 (33 jobs)."
+
+  # ── Coaching / wellbeing / EAP ────────────────────────────────────────────
+  - name: BetterUp
+    careers_url: https://jobs.ashbyhq.com/betterup
+    provider: ashby
+    enabled: true
+    notes: "Coaching & leadership development platform. Verified 2026-11-12 (7 jobs)."
+
+  - name: Lyra Health
+    careers_url: https://jobs.lever.co/lyrahealth
+    provider: lever
+    enabled: true
+    notes: "Workforce mental health / EAP. Non-clinical roles only abroad. Verified 2026-11-12 (486 jobs)."
+
+job_boards:
+  - name: Himalayas
+    provider: himalayas
+    enabled: true
+  - name: Remotive
+    provider: remotive
+    enabled: true
+  - name: Jobicy
+    provider: jobicy
+    enabled: true
+  - name: Working Nomads
+    provider: workingnomads
+    enabled: true
+
+# NOT VERIFIED (no supported ATS found, or 0 open jobs on 2026-11-12) —
+# evaluate their postings by pasting the URL instead:
+#   Hogan Assessments, SHL, Korn Ferry, DDI, Talogy, Aon Assessment,
+#   Celemi, CoachHub, GoodHabitz, Sana Labs, Leapsome,
+#   Spring Health, Headspace, Unmind, Kooth, TELUS Health, Torch,
+#   DHL, Unilever, Getir, Hepsiburada, Insider, Papara, Visa.

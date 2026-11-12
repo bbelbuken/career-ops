@@ -1,0 +1,213 @@
+# Portal template: Tech family (fork-local)
+#
+# Used by: candidates whose archetypes in templates/archetypes.yml are `family: tech`.
+# During intake, copy this file to `portals.yml` (user layer, gitignored) and
+# refine location_filter with the candidate's target countries/cities.
+#
+# Turkish job sites (Kariyer.net, LinkedIn, Indeed) are NOT scannable — for those
+# the flow is "paste the URL / JD → evaluate". This file only covers boards the
+# scanner can read.
+#
+# Every tracked_companies entry below was resolved and confirmed live with
+# `node discover-ats.mjs` on 2026-11-12 (job counts shown in notes).
+# Re-check periodically with `node audit-portals.mjs`.
+
+title_filter:
+  positive:
+    # backend-fullstack-node
+    - "Backend"
+    - "Back-end"
+    - "Full Stack"
+    - "Fullstack"
+    - "Full-Stack"
+    - "Node"
+    - "TypeScript"
+    - "Software Engineer"
+    - "Software Developer"
+    - "Product Engineer"
+    # cloud-serverless
+    - "Cloud"
+    - "Serverless"
+    - "Platform Engineer"
+    - "Data Engineer"
+    - "Integration"
+    # ai-llm-application
+    - "AI Engineer"
+    - "AI"
+    - "LLM"
+    - "GenAI"
+    - "Applied AI"
+    - "Agent"
+    - "Forward Deployed"
+    # iot-signage-media
+    - "IoT"
+    - "Signage"
+    - "Media"
+    - "Video"
+    - "Streaming"
+    # Turkish titles
+    - "Yazılım"
+  negative:
+    - "Intern"
+    - "Internship"
+    - "Stajyer"
+    - "Working Student"
+    - "Principal"
+    - "Staff"
+    - "Director"
+    - "Head of"
+    - "Manager"
+    - "VP "
+    - "iOS"
+    - "Android Engineer"
+    - "Sales"
+    - "Recruiter"
+    - "Account Executive"
+
+# Draft allow-list: Turkey + EU + remote. Narrow it during intake.
+location_filter:
+  always_allow:
+    - "Turkey"
+    - "Türkiye"
+    - "Turkiye"
+  allow:
+    - "Istanbul"
+    - "İstanbul"
+    - "Ankara"
+    - "Izmir"
+    - "İzmir"
+    - "Remote"
+    - "EMEA"
+    - "Europe"
+    - "Netherlands"
+    - "Amsterdam"
+    - "Germany"
+    - "Berlin"
+    - "Spain"
+    - "Portugal"
+    - "Ireland"
+    - "United Kingdom"
+    - "London"
+    - "Poland"
+
+max_posting_age_days: 45
+
+tracked_companies:
+
+  # ── AI tooling / LLM ───────────────────────────────────────────────────────
+  - name: LangChain
+    careers_url: https://jobs.ashbyhq.com/langchain
+    provider: ashby
+    enabled: true
+    notes: "LLM agent framework. Verified 2026-11-12 (101 jobs)."
+
+  - name: ElevenLabs
+    careers_url: https://jobs.ashbyhq.com/elevenlabs
+    provider: ashby
+    enabled: true
+    notes: "Voice AI, remote-friendly, EU hubs; AI + audio overlap. Verified 2026-11-12 (128 jobs)."
+
+  - name: n8n
+    careers_url: https://jobs.ashbyhq.com/n8n
+    provider: ashby
+    enabled: true
+    notes: "Workflow automation + AI agents (Berlin/remote, Node/TS). Verified 2026-11-12 (54 jobs)."
+
+  - name: Replit
+    careers_url: https://jobs.ashbyhq.com/replit
+    provider: ashby
+    enabled: true
+    notes: "AI coding agent platform. Verified 2026-11-12 (31 jobs)."
+
+  - name: Hugging Face
+    careers_url: https://apply.workable.com/huggingface
+    provider: workable
+    enabled: true
+    notes: "Open-source AI, remote. Verified 2026-11-12 (6 jobs)."
+
+  # ── Remote-first SaaS / developer platforms ───────────────────────────────
+  - name: GitLab
+    careers_url: https://job-boards.greenhouse.io/gitlab
+    provider: greenhouse
+    enabled: true
+    notes: "All-remote. Verified 2026-11-12 (259 jobs)."
+
+  - name: Vercel
+    careers_url: https://job-boards.greenhouse.io/vercel
+    provider: greenhouse
+    enabled: true
+    notes: "Remote-friendly, TS/Node. Verified 2026-11-12 (87 jobs)."
+
+  - name: Supabase
+    careers_url: https://jobs.ashbyhq.com/supabase
+    provider: ashby
+    enabled: true
+    notes: "Fully remote, Postgres + TS. Verified 2026-11-12 (77 jobs)."
+
+  - name: Cloudflare
+    careers_url: https://job-boards.greenhouse.io/cloudflare
+    provider: greenhouse
+    enabled: true
+    notes: "Serverless (Workers) + Workers AI; EU offices. Verified 2026-11-12 (485 jobs)."
+
+  - name: PostHog
+    careers_url: https://jobs.ashbyhq.com/posthog
+    provider: ashby
+    enabled: true
+    notes: "All-remote, TS product engineers. Verified 2026-11-12 (10 jobs)."
+
+  # ── IoT / signage / media ─────────────────────────────────────────────────
+  - name: Samsara
+    careers_url: https://job-boards.greenhouse.io/samsara
+    provider: greenhouse
+    enabled: true
+    notes: "IoT device fleets; EU offices. Verified 2026-11-12 (314 jobs)."
+
+  - name: Yodeck
+    careers_url: https://apply.workable.com/yodeck
+    provider: workable
+    enabled: true
+    notes: "Digital signage SaaS (Greece/remote) — direct domain match. Verified 2026-11-12 (7 jobs)."
+
+  - name: Cloudinary
+    careers_url: https://jobs.lever.co/cloudinary
+    provider: lever
+    enabled: true
+    notes: "Image/video media pipelines. Verified 2026-11-12 (8 jobs)."
+
+  # ── Turkish product companies ─────────────────────────────────────────────
+  - name: Trendyol
+    careers_url: https://jobs.lever.co/trendyol
+    provider: lever
+    enabled: true
+    notes: "Istanbul eCommerce, large engineering org. Verified 2026-11-12 (50 jobs)."
+
+  - name: Peak
+    careers_url: https://jobs.lever.co/peakgames
+    provider: lever
+    enabled: true
+    notes: "Istanbul gaming (Zynga). Verified 2026-11-12 (20 jobs)."
+
+job_boards:
+  - name: Himalayas
+    provider: himalayas
+    enabled: true
+  - name: RemoteOK
+    provider: remoteok
+    enabled: true
+  - name: We Work Remotely
+    provider: weworkremotely
+    enabled: true
+  - name: Remotive
+    provider: remotive
+    enabled: true
+  - name: Landing.jobs
+    provider: landingjobs
+    enabled: true
+
+# NOT VERIFIED (no supported ATS found, probe error, or 0 open jobs on 2026-11-12) —
+# evaluate their postings by pasting the URL instead:
+#   Insider (useinsider), Getir, Papara, Midas, Dream Games (1 job, unconfirmed owner),
+#   Hepsiburada, Mistral AI, Remote.com, Deel, ScreenCloud, Raydiant, Kaltura,
+#   Mux (2 jobs, unconfirmed owner), Cal.com, Udemy (2 jobs, unconfirmed owner).
+#   Zapier, Linear, Sanity resolved fine but were left out to keep the list at 15.

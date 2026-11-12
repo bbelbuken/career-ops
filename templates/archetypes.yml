@@ -1,0 +1,161 @@
+# Shared archetype library (fork-local: Batu & Gökçe)
+#
+# One library, two candidates. Each person's `config/profile.yml` selects the
+# archetypes that apply to them by `id` under `target_roles.archetypes`
+# (with `fit: primary | secondary | adjacent`). During intake/onboarding the
+# agent renders the selected entries into the "Your Target Roles" table of
+# that person's `modes/_profile.md` (the table the evaluator actually reads).
+#
+# This file holds NO personal data: only role definitions and keywords.
+# Proof points and narrative live in each person's own user-layer files.
+#
+# Fields
+#   id            stable key referenced from profile.yml
+#   family        hr | tech (used to pick portals.hr.yml vs portals.tech.yml)
+#   name          display name (used in _profile.md and reports)
+#   levels        seniority bands this archetype is pursued at
+#   axes          thematic axes ("Thematic axes" column in _profile.md)
+#   buys          what the employer is buying ("What they buy" column)
+#   jd_signals    phrases that identify this archetype in a JD
+#   ats_keywords  terms to mirror in CVs / check with keyword-match.mjs
+#                 (en = English postings, tr = Turkish postings)
+#   title_keywords  job-title terms for portals.yml title_filter.positive
+#   notes         scoring caveats (stretch areas, licensure, etc.)
+
+version: 1
+
+archetypes:
+
+  # ───────────────────────────── HR / L&D family ─────────────────────────────
+
+  - id: ld-training-facilitation
+    family: hr
+    name: "L&D / Training & Facilitation Specialist"
+    levels: [Specialist, Senior Specialist]
+    axes: [facilitation, training design & delivery, train-the-trainer, sales/soft-skills training, LMS]
+    buys: "Someone who designs and delivers engaging training that people rate highly and apply on the job"
+    jd_signals: ["facilitate", "training delivery", "train-the-trainer", "learning programs", "workshop", "onboarding program", "LMS", "learning & development"]
+    title_keywords: ["Learning & Development", "L&D", "Training Specialist", "Trainer", "Facilitator", "Learning Specialist", "Learning Partner", "Eğitim Uzmanı", "Eğitim ve Gelişim"]
+    ats_keywords:
+      en: ["learning and development", "training needs analysis", "facilitation", "instructional design", "train-the-trainer", "LMS administration", "blended learning", "Kirkpatrick", "training evaluation", "onboarding", "sales training", "soft skills", "localization", "stakeholder management"]
+      tr: ["eğitim ve gelişim", "eğitim ihtiyaç analizi", "eğitmen", "fasilitasyon", "eğitim planlama", "eğitim değerlendirme", "oryantasyon", "satış eğitimi", "yetkinlik gelişimi", "LMS yönetimi"]
+    notes: "Strongest archetype for an L&D profile."
+
+  - id: leadership-talent-assessment
+    family: hr
+    name: "Leadership Development & Talent Assessment"
+    levels: [Specialist, Senior Specialist, Consultant]
+    axes: [360° feedback, assessment & development centers, psychometrics, leadership programs, talent reviews]
+    buys: "Someone who measures and develops leadership potential with valid tools and credible feedback"
+    jd_signals: ["assessment center", "development center", "360", "psychometric", "leadership development", "talent assessment", "succession", "high potential", "Hogan", "SHL"]
+    title_keywords: ["Leadership Development", "Talent Assessment", "Assessment Consultant", "Talent Development", "Talent Management", "Yetenek Yönetimi", "Liderlik Gelişimi"]
+    ats_keywords:
+      en: ["leadership development", "assessment center", "development center", "360-degree feedback", "psychometric assessment", "Hogan", "competency framework", "talent review", "succession planning", "high-potential program", "coaching", "feedback debrief"]
+      tr: ["liderlik gelişimi", "değerlendirme merkezi", "gelişim merkezi", "360 derece geri bildirim", "psikometrik testler", "yetkinlik modeli", "yetenek yönetimi", "yedekleme planı", "potansiyel değerlendirme"]
+    notes: "Certification-gated tools (Hogan, SHL, MBTI) count only if the CV states them."
+
+  - id: org-development-consultant
+    family: hr
+    name: "Organizational Development / Org Psychology Consultant"
+    levels: [Specialist, Consultant]
+    axes: [OD interventions, culture & engagement, psychological safety, change management, team effectiveness]
+    buys: "Someone who diagnoses team/organization issues and runs evidence-based interventions"
+    jd_signals: ["organizational development", "OD", "culture", "engagement", "change management", "team effectiveness", "psychological safety", "organizational psychology"]
+    title_keywords: ["Organizational Development", "OD Specialist", "OD Consultant", "Culture", "Employee Experience", "Organizational Psychologist", "Organizasyonel Gelişim"]
+    ats_keywords:
+      en: ["organizational development", "change management", "employee engagement", "culture transformation", "psychological safety", "team effectiveness", "survey design", "intervention design", "organizational psychology"]
+      tr: ["organizasyonel gelişim", "değişim yönetimi", "çalışan bağlılığı", "kurum kültürü", "psikolojik güvenlik", "çalışan deneyimi", "endüstri ve örgüt psikolojisi"]
+    notes: "Senior OD roles often expect 7+ years; score level fit honestly."
+
+  - id: ld-vendor-client-roles
+    family: hr
+    name: "L&D Vendor: Learning Consultant / Client Success / Business Development"
+    levels: [Specialist, Senior Specialist, Consultant]
+    axes: [client relationships, solution selling of learning programs, program management, business simulations]
+    buys: "Someone who understands L&D buyers and can scope, sell and run programs for corporate clients"
+    jd_signals: ["client success", "account management", "learning solutions", "business development", "program manager", "client relationship", "consultative selling"]
+    title_keywords: ["Learning Consultant", "Client Success", "Customer Success", "Client Partner", "Business Development", "Account Manager", "Program Manager", "Müşteri İlişkileri", "İş Geliştirme"]
+    ats_keywords:
+      en: ["client relationship management", "consultative selling", "learning solutions", "program management", "proposal writing", "client onboarding", "CRM", "business simulations", "account growth", "corporate training"]
+      tr: ["müşteri ilişkileri yönetimi", "iş geliştirme", "kurumsal eğitim", "proje yönetimi", "teklif hazırlama", "müşteri memnuniyeti", "danışmanlık"]
+    notes: "Best path for training/assessment firms (Hogan partners, SHL, Korn Ferry, DDI, Celemi, coaching platforms)."
+
+  - id: wellbeing-eap
+    family: hr
+    name: "Employee Wellbeing / EAP / Psychological Safety Programs"
+    levels: [Specialist, Senior Specialist]
+    axes: [wellbeing program design, EAP, mental-health literacy, psychological safety, behavior change]
+    buys: "Someone with a psychology background who can run non-clinical wellbeing programs at scale"
+    jd_signals: ["wellbeing", "well-being", "EAP", "mental health", "resilience", "psychological safety", "employee assistance", "burnout"]
+    title_keywords: ["Wellbeing", "Well-being", "EAP", "Mental Health Program", "Employee Assistance", "Psychological Safety", "Çalışan Esenliği", "Psikolojik Danışman"]
+    ats_keywords:
+      en: ["employee wellbeing", "employee assistance program", "mental health awareness", "resilience training", "psychological safety", "CBT", "ACT", "motivational interviewing", "behavior change", "program evaluation"]
+      tr: ["çalışan esenliği", "çalışan destek programı", "ruh sağlığı farkındalığı", "psikolojik dayanıklılık", "psikolojik güvenlik", "bilişsel davranışçı", "motivasyonel görüşme"]
+    notes: "Abroad: NON-clinical roles only. Clinical titles (Psychologist, Therapist, Counselor) need local licensure; flag them as a hard blocker outside Turkey."
+
+  - id: learning-experience-design
+    family: hr
+    name: "Learning Experience Design (stretch)"
+    levels: [Specialist]
+    axes: [instructional design, e-learning, blended journeys, content localization]
+    buys: "Someone who designs learner-centered digital and blended learning journeys"
+    jd_signals: ["instructional design", "learning experience", "LXD", "e-learning", "Articulate", "Rise", "Storyline", "content development"]
+    title_keywords: ["Learning Experience Designer", "Instructional Designer", "LXD", "Learning Designer", "Öğretim Tasarımcısı"]
+    ats_keywords:
+      en: ["instructional design", "learning experience design", "ADDIE", "storyboarding", "blended learning", "e-learning", "content localization", "learner journey"]
+      tr: ["öğretim tasarımı", "e-öğrenme", "harmanlanmış öğrenme", "içerik geliştirme", "yerelleştirme"]
+    notes: "Stretch: authoring tools (Articulate/Rise/Storyline) are a gap unless the CV says otherwise; never claim them."
+
+  # ─────────────────────────────── Tech family ───────────────────────────────
+
+  - id: backend-fullstack-node
+    family: tech
+    name: "Backend / Full Stack Engineer (Node.js / TypeScript)"
+    levels: [Mid, Mid-Senior]
+    axes: [REST APIs, multi-tenant SaaS, MongoDB/PostgreSQL, real-time (WebSocket), RBAC]
+    buys: "Someone who ships and owns production APIs and the features on top of them"
+    jd_signals: ["Node.js", "TypeScript", "Express", "NestJS", "REST", "API", "MongoDB", "PostgreSQL", "React", "full stack", "backend"]
+    title_keywords: ["Backend Engineer", "Backend Developer", "Full Stack", "Fullstack", "Node.js", "Software Engineer", "Software Developer", "Yazılım Geliştirici", "Yazılım Mühendisi"]
+    ats_keywords:
+      en: ["Node.js", "TypeScript", "JavaScript", "Express", "REST API", "MongoDB", "PostgreSQL", "Socket.IO", "WebSockets", "RBAC", "multi-tenant", "SaaS", "React", "Docker", "CI/CD", "unit testing"]
+      tr: ["yazılım geliştirme", "backend geliştirme", "API geliştirme", "veritabanı", "mikroservis"]
+    notes: "Short tenure (~2.5y): target Mid, not Senior. No Kubernetes / large-scale system design evidence."
+
+  - id: cloud-serverless
+    family: tech
+    name: "Cloud / Serverless Engineer (AWS, Azure)"
+    levels: [Mid]
+    axes: [serverless architecture, event-driven systems, IaC, ETL pipelines]
+    buys: "Someone who builds event-driven, serverless backends and data pipelines with IaC"
+    jd_signals: ["AWS", "Lambda", "CDK", "Terraform", "serverless", "EventBridge", "Azure Functions", "Service Bus", "event-driven", "ETL"]
+    title_keywords: ["Cloud Engineer", "Serverless", "Platform Engineer", "Data Engineer", "AWS", "Azure", "Bulut"]
+    ats_keywords:
+      en: ["AWS", "AWS CDK", "Lambda", "EventBridge", "S3", "Aurora PostgreSQL", "Azure Functions", "Azure Service Bus", "serverless", "event-driven architecture", "infrastructure as code", "ETL", "MongoDB Change Streams"]
+      tr: ["bulut bilişim", "sunucusuz mimari", "olay güdümlü mimari", "veri aktarımı"]
+    notes: "Heavy-K8s / SRE roles are a stretch; score honestly."
+
+  - id: ai-llm-application
+    family: tech
+    name: "AI / LLM Application Engineer"
+    levels: [Mid]
+    axes: [LLM agents, tool use, AI developer tooling, NLP pipelines]
+    buys: "Someone who turns LLMs into working product features and agent workflows"
+    jd_signals: ["LLM", "agent", "agentic", "RAG", "prompt", "OpenAI", "Claude", "Anthropic", "GenAI", "AI engineer", "NLP"]
+    title_keywords: ["AI Engineer", "LLM", "GenAI", "Applied AI", "AI Developer", "Agent", "Machine Learning Engineer", "Yapay Zeka"]
+    ats_keywords:
+      en: ["LLM", "AI agents", "multi-agent", "Claude Code", "prompt engineering", "RAG", "tool calling", "Cloudflare Workers AI", "RoBERTa", "NLP", "FastAPI", "Celery", "Redis", "Python"]
+      tr: ["yapay zeka", "büyük dil modelleri", "doğal dil işleme", "otomasyon"]
+    notes: "Preferred growth direction. Research/ML-modeling roles (training models) are a stretch."
+
+  - id: iot-signage-media
+    family: tech
+    name: "Niche: IoT / Digital Signage / Media & Video Pipelines"
+    levels: [Mid]
+    axes: [device fleets, smart-TV platforms, media playback, audio/video]
+    buys: "Someone who has run software on fleets of real devices and understands media"
+    jd_signals: ["digital signage", "IoT", "device management", "Tizen", "webOS", "Android TV", "media player", "video streaming", "audio"]
+    title_keywords: ["Digital Signage", "IoT", "Embedded Web", "Smart TV", "Media Engineer", "Video", "Streaming", "Audio"]
+    ats_keywords:
+      en: ["digital signage", "IoT", "device fleet", "Tizen", "webOS", "Android", "media playback", "video pipeline", "real-time sync", "audio engineering"]
+      tr: ["dijital ekran", "nesnelerin interneti", "medya oynatma", "ses mühendisliği"]
+    notes: "Niche differentiator; combine with backend for higher fit."
