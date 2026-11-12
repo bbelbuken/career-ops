@@ -21,7 +21,8 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **Uyarlanmış CV (PDF)** | İlana göre öne çıkarılmış, ATS uyumlu bir CV PDF'i üretir | "Bu ilan için CV PDF'i hazırla" |
 | **Ön yazı (cover letter)** | İlana özel bir ön yazı yazar | "Bu ilan için cover letter yaz" |
 | **Başvuru e-postası** | İK'ya gönderilecek e-postanın taslağını yazar (göndermez) | "Bu başvuru için e-posta taslağı hazırla" |
-| **Form cevapları** | Başvuru formundaki soruları (neden biz, maaş beklentisi vb.) cevaplar | "Başvuru formundaki şu soruları cevapla: ..." |
+| **Başvuru formunu doldur** ⭐ | Şirketin başvuru sayfasını tarayıcıda açar; isim, deneyim, CV yükleme, "neden biz" gibi alanları doldurur ve **"Gönder" tuşunda durur**. Kontrol edip tek tıkla sen gönderirsin. Şirket kariyer sayfalarında (Workday, Greenhouse, Lever…) çalışır, LinkedIn/Kariyer.net'te çalışmaz | "Bu ilana başvur: [link]" |
+| **Form cevapları** | Formu sen dolduruyorsan, sorulara (neden biz, maaş beklentisi vb.) cevap yazar | "Başvuru formundaki şu soruları cevapla: ..." |
 
 ## 3. Şirket Araştırması ve İletişim
 
@@ -78,7 +79,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 ---
 
 ## Temel Kurallar
-1. **Hiçbir başvuruyu ben göndermem.** Hazırlarım; göndermek her zaman senin elinde.
+1. **Son tıklama senin.** CV'yi hazırlarım, formu doldururum, "Gönder" tuşunda dururum. Yanlış bir başvuru geri alınamaz; bu yüzden göndermeden önce son kontrol hep sende.
 2. **Onayın olmadan dosyana bir şey yazmam.** Önce gösteririm, sonra sorarım.
 3. **CV'nde olmayan bir şeyi uydurmam.** Sadece var olanı daha iyi anlatırım.
 4. **4.0 altı puan alan ilanlara başvurmanı önermem.** Yine de karar senin.
