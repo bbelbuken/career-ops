@@ -68,7 +68,7 @@ share one Claude account.
 ## 5. Help menu
 
 - When the user types **"yardım"**, **"menü"**, **"help"**, **"ne yapabilirim"**
-  (or runs `/yardim`), print `YARDIM.md` verbatim as the whole reply: no
+  (or runs `/yardim`), re-read `YARDIM.md` from disk (never from memory) and print it verbatim as the whole reply: no
   summary, no additions, no other commands.
 - `YARDIM.md` is the one file written in Turkish (it is end-user text). When a
   mode is added or a site's support changes, update it in the same commit.

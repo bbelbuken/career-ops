@@ -77,13 +77,6 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 
 ---
 
-## 8. Sistem
-
-| Ne | 💬 Şöyle yaz |
-|---|---|
-| Sistemi güncelle (Batu'nun yeniliklerini al) | "sistemi güncelle" |
-| Bu menüyü tekrar göster | "yardım" veya `/yardim` |
-
 ## Temel Kurallar
 1. **Hiçbir başvuruyu ben göndermem.** Hazırlarım; göndermek her zaman senin elinde.
 2. **Onayın olmadan dosyana bir şey yazmam.** Önce gösteririm, sonra sorarım.
