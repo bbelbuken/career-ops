@@ -1,10 +1,10 @@
-# 🍽️ career-ops Menüsü
+# career-ops Kullanım Rehberi
 
 Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlelerinle yazsan da anlarım.
 
 ---
 
-## 🥗 Başlangıçlar: Kurulum
+## 1. Kurulum ve Profil
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -12,7 +12,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **CV'ye ekleme** | Yeni bir iş, proje veya sertifikayı CV'ne ekler | "CV'me yeni işimi ekle: ..." |
 | **Unuttuğum yetkinlikler** | Sorular sorarak CV'de eksik kalan güçlü yanlarını bulur | "CV'mde eksik kalan yetkinliklerimi bul" |
 
-## 🍲 Ana Yemekler: İlan & Başvuru
+## 2. İlan Değerlendirme ve Başvuru
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -23,7 +23,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **Başvuru e-postası** | İK'ya gönderilecek e-postanın taslağını yazar (göndermez) | "Bu başvuru için e-posta taslağı hazırla" |
 | **Form cevapları** | Başvuru formundaki soruları (neden biz, maaş beklentisi vb.) cevaplar | "Başvuru formundaki şu soruları cevapla: ..." |
 
-## 🥘 Yan Lezzetler: Araştırma & İletişim
+## 3. Şirket Araştırması ve İletişim
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -31,7 +31,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **Kırmızı bayraklar** | Şirkette çalışmanın riskleri: yorumlar, işten çıkarmalar, sorunlar | "[Şirket] için kırmızı bayraklara bak" |
 | **LinkedIn mesajı** | İşe alımcıya veya yöneticiye kısa bir bağlantı mesajı yazar | "Bu ilan için işe alımcıya LinkedIn mesajı yaz" |
 
-## 🍰 Tatlılar: Mülakat & Teklif
+## 4. Mülakat ve Teklif
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -40,7 +40,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **Mülakat sonrası** | Mülakatın nasıl geçtiğini analiz eder, eksikleri çıkarır | "Bugünkü mülakatı değerlendirelim" |
 | **Teklif / sözleşme** | Gelen teklifi madde madde açıklar, sorulacak soruları listeler | "Gelen teklifi birlikte okuyalım" |
 
-## ☕ İçecekler: Takip
+## 5. Başvuru Takibi
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -51,7 +51,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 | **Puanlar tutuyor mu?** | 10 sonuç birikince puanların gerçeği ne kadar yansıttığını kontrol eder | "Kalibrasyon yap" |
 | **Ret kalıpları** | Retlerde ortak bir neden var mı diye bakar | "Retlerimde bir kalıp var mı?" |
 
-## 🔎 Şefin Önerileri: Keşif
+## 6. Yeni İlan Bulma
 
 | Ne | Ne işe yarar | 💬 Şöyle yaz |
 |---|---|---|
@@ -62,7 +62,7 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 
 ---
 
-## 🌍 Site Rehberi: Nerede ne yapabilirim?
+## 7. Site Rehberi: Nerede ne yapabilirim?
 
 | Site | Ne olur | Ne yapmalısın |
 |---|---|---|
@@ -77,14 +77,14 @@ Aşağıdaki 💬 cümlelerden birini kopyalayıp yazman yeterli. Kendi cümlele
 
 ---
 
-## ⚙️ Sistem
+## 8. Sistem
 
 | Ne | 💬 Şöyle yaz |
 |---|---|
 | Sistemi güncelle (Batu'nun yeniliklerini al) | "sistemi güncelle" |
 | Bu menüyü tekrar göster | "yardım" veya `/yardim` |
 
-## 📜 Altın Kurallar
+## Temel Kurallar
 1. **Hiçbir başvuruyu ben göndermem.** Hazırlarım; göndermek her zaman senin elinde.
 2. **Onayın olmadan dosyana bir şey yazmam.** Önce gösteririm, sonra sorarım.
 3. **CV'nde olmayan bir şeyi uydurmam.** Sadece var olanı daha iyi anlatırım.
